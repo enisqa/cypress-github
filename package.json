@@ -4,7 +4,10 @@
   "description": "Cypress-testing",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "cypress:e2echrome": "cypress run --browser chrome",
+    "cypress:e2etest": "cypress run --browser chrome -- --spec cypress/e2e/cypressStudio.cy.js",
+    "cypress:e2etestrecord": "cypress run --record --key 4b0596d9-832e-4e2a-9850-3eec49ee9496 --browser chrome -- --spec cypress/e2e/cypressStudio.cy.js"
   },
   "repository": {
     "type": "git",
