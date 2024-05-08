@@ -14,7 +14,7 @@ it('New Login', function() {
   cy.get(':nth-child(1) > .pricebar > .btn_primary').click();
   cy.get('path').click();
   cy.get('.cart_footer > .btn_secondary').click();
-  cy.get('.product_label').should('have.text', 'Product');
+  cy.get('.product_label').should('have.text', 'Products');
   cy.get('.bm-burger-button > button').click();
   cy.get('#logout_sidebar_link').click();
   /* ==== End Cypress Studio ==== */
