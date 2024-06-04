@@ -1,8 +1,12 @@
 describe('Cypress MTT Test', () => {});
 
-it ('test dmeo', () => {
-    cy.visit('https://pre-cms1-author.audi.com/etc/vms_browser/vb.editor.html?fieldId=ext-comp-1485&jcrContentPath=%2Fcontent%2Fca%2Fweb%2Fen%2Fmodels%2Fa4%2Fa4-sedan%2Fjcr%3Acontent%2Fcontent%2Ffeature_app_include_305241142&schemaUrl=https%3A%2F%2Ffa-mtt.cdn.prod.arcade.apps.one.audi%2Fv2.9.4%2Feditor.json&contentType=')
-    cy.get('#root\[themeContent\]\[theme\]\[0\]')
-    cy.get('.btn-primary')
-
-})
+/* ==== Test Created with Cypress Studio ==== */
+it('demo test', function() {
+  /* ==== Generated with Cypress Studio ==== */
+  cy.visit('https://fa-mtt.cdn.prod.arcade.apps.one.audi/v2.9.4/demo/index.html');
+  cy.get('.editor-wrapper__EditorButton-sc-1y3otti-1').click();
+  cy.get(':nth-child(1) > .je-object__container > .card > :nth-child(1) > :nth-child(1) > .row > .col-md-12 > .form-group > #undefined > :nth-child(1) > :nth-child(2) > .form-check-label').click();
+  cy.get('#root\\[themeContent\\]\\[theme\\]\\[1\\]').check();
+  cy.get('.btn-primary').click();
+  /* ==== End Cypress Studio ==== */
+});
